@@ -42,7 +42,7 @@ const btn = document.getElementById("addMemberButton");
 btn.addEventListener ("click", () =>{
     const nameInput = document.getElementById("name").value;
     const roleInput = document.getElementById("role").value;
-    const imageInput = document.getElementById("image").value;
+    const imageInput = document.getElementById("image").files[0].name;
     const person = {
         name: 'noName',
         role: 'noRole',
