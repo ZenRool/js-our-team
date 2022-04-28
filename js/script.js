@@ -53,7 +53,9 @@ function domPrintPerson(person) {
     str.innerHTML = `
     <span>
         Nome: ${person.name} | Ruolo: ${person.role} | Indirizzo immagine: ${person.image}   
-    </span>`
+    </span>
+    <img src="img/${person.image}" alt="immagine di ${person.name}">`
+
     stringDom.append(str);   
 
 }
