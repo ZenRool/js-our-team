@@ -30,9 +30,30 @@ const team = [
       image: 'barbara-ramos-graphic-designer.jpg',
     },
 ];
-// devo un caffè a chiunque abbia inventato il forEach 
+
+
+
+// devo un caffè a chiunque abbia inventato il forEach | commento serio per ogni elemento in team faccio printPerson dando come input 
 team.forEach(printPerson);
+team.forEach(domPrintPerson);
+// Prima millestone
 // Funzione che stampa tutte le carratteristiche dei elementi di team  nel log
 function printPerson(person) {
     console.log("Nome:", person.name, "; Ruolo:", person.role, "; Indirizzo immagine:", person.image);
+}
+//fine prima millestone
+//Seconda milestone
+// Funzione che stampa tutte le carratteristiche dei elementi di team  nel dom dato in input
+function domPrintPerson(person) {
+    //Element dove mettere i div che contengono le stringhe
+    const stringDom = document.getElementById("stringTeam");
+
+    
+    const str = document.createElement("div");
+    str.innerHTML = `
+    <span>
+        Nome: ${person.name} | Ruolo: ${person.role} | Indirizzo immagine: ${person.image}   
+    </span>`
+    stringDom.append(str);   
+
 }
