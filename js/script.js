@@ -30,8 +30,9 @@ const team = [
       image: 'barbara-ramos-graphic-designer.jpg',
     },
 ];
-
+// devo un caffè a chiunque abbia inventato il forEach 
+team.forEach(printPerson);
 // Funzione che stampa tutte le carratteristiche dei elementi di team  nel log
 function printPerson(person) {
-    console.log(person.name, person.role, person.image);
+    console.log("Nome:", person.name, "; Ruolo:", person.role, "; Indirizzo immagine:", person.image);
 }
