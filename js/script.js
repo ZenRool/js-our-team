@@ -30,3 +30,8 @@ const team = [
       image: 'barbara-ramos-graphic-designer.jpg',
     },
 ];
+
+// Funzione che stampa tutte le carratteristiche dei elementi di team  nel log
+function printPerson(person) {
+    console.log(person.name, person.role, person.image);
+}
